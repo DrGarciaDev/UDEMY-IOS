@@ -1,0 +1,66 @@
+# ===========================
+# Swift / Xcode .gitignore
+# ===========================
+
+# Build products
+build/
+DerivedData/
+*.o
+*.d
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode user-specific (preferencias personales de cada dev)
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# ===========================
+# IDEs / Editores
+# ===========================
+
+# VSCode
+.vscode/
+
+# AppCode / JetBrains (Fleet, CLion, etc)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Cursor
+.cursor/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# TextMate
+*.tmproj
+*.tmproject
+.tmtags
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+Session.vim
+
+# Emacs
+*~
+\#*\#
+.#*
+.emacs.desktop
+.emacs.desktop.lock

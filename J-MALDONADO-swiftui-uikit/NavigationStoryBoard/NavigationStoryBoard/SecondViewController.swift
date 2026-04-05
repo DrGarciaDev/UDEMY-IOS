@@ -8,15 +8,23 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    @IBOutlet weak var resultado: UILabel!
+    
+    //variable para recibir parametro desde pantalla principal
+    var saludo: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //cuando se recibe el valor en la variable saludo se pasará al label llamada resultado
+        resultado.text = saludo
     }
     
     @IBAction func regresar(_ sender: UIButton) {
-        dismiss(animated: true)
+        //dismiss(animated: true)
+        //ayuda a regresar a la pantalla anterior 
+        navigationController?.popViewController(animated: true)
     }
     
     /*
